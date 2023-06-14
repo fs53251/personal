@@ -1,0 +1,47 @@
+Use Caseovi
+UC1 - Pregled klubova
+UC2 - Registracija korisnika
+UC3 - Prijava u sustav
+UC4 - Pregled osobnih podataka
+UC5 - Promjena osobnih podataka
+UC6 - Brisanje korisničkog računa
+UC7 - Prikaz slobodnih tečajeva
+UC8 - Pregled profila kluba (od strane klijenta - (Na profilu kluba su prikazane informacije o imenu kluba, kontakt telefon, email
+adresa, kratki opis, poveznica na stranicu s grupama za upis, popis plesova koje njihovi
+treneri mogu voditi, prikaz lokacija na karti i popis dvorana po lokacijama.))
+UC9 - Prijava za trenera
+UC10 - Odobravanje klijenta za trenera
+UC11 - Dodavanje klubova
+UC12 - Brisanje kluba
+UC13 - Organizacija plesnjaka **mozda odabir lokacije
+UC14 - Prikaz tečaja za trenere ** mozda prikaz kalendara (Svaki trener ima podstranicu na kojima ima popis grupa koje trenira, a svi termini
+tečaja koje vodi su mu prikazani na kalendaru.)
+UC15 - Prikaz popisa klijenata koji bi trebali biti nazočni (**Je li plesnjak dio tečaja ili se na plesnjaku održava nekoliko tečajeva?)
+UC16 - Objava upisa za tečaj (od strane kluba)
+UC17 - Prijava na tečaj (od strane klijenta)
+UC18 - Pregled aktivnih prijava na tečaj od kluba (Klijent može pregledati aktivne prijave na tečaj od kluba i prijaviti se. )
+UC19 - Odabir klijenata koji se primaju na tečaj (Nakon isteka
+roka upisa, klub treba odabrati klijente koji se primaju u grupu.)
+
+UC - Uređivanje popisa klijenata (od strane kluba)--> UC20 - Dodavanje klijenata
+								--> UC21 - Brisanje klijenata
+UC - Upravljanje tečajeva (od strane administratora)--> UC22 - Brisanje tečajeva
+						  --> UC23 - Uređivanje tečajeva
+UC - Upravljanje plesovima (od Strane Administratora) --> UC24 - Dodavanje plesa
+						   --> UC25 - Uređivanje plesa
+						   --> UC26 - Brisanje plesa
+UC27 - Pregled popisa svih klijenata (Od strane Administratora)
+UC28 - Brisanje klijenata (od strane Administratora)
+UC29 - Pregled svih klubova (od strane administratora)
+						   				  
+Dodatno:
+UC31 - Uredivanje računa klijenta? (od strane administratora)
+UC32 - Uređivanje računa kluba? (od strane administratora)
+** Kalendar (Kalendar ima zapisane termine tečaja i lokacije s dvoranom za svaki termin.)
+** Prihvacanje klubova od strane Administratora 
+** Odabir tečaja za trenere (Prijava sadrži motivacijsko pismo i potvrdu u obliku pdf dokumenta da je
+osposobljen držati tečaj plesa.) - je li trener bira tečajeve koje ce trenirati u klubu ili mora voditi sve tečajeve?? 
+** Prikaz informacija o tečaju ?? - mozda kod upisa/odabira tečaja
+** Pregled tipova plesova (opceniti - nevezano uz klubove) 
+** Pregled plesnjaka (koje organiziraju klubovi)
+

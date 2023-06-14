@@ -1,0 +1,73 @@
+.delete-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete-popup-inner {
+    position: relative;
+    padding: 32px;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 800px;
+    font-size: 18px;
+}
+
+.delete-popup-inner .delete-close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.delete-confirmationInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
+
+.delete-confirmationText {
+    margin-right: 60px;
+    margin-left: 60px;
+    border-color: purple;
+    font-size: 18px;
+    width: 50%;
+    text-align: center;
+}
+
+.delete-btn,
+.delete-close-btn {
+    background: linear-gradient(to right,purple,rgb(221, 4, 221));
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.delete-close-btn {
+    background: linear-gradient(to right,purple,rgb(221, 4, 221));
+    height: 25px;
+    font-size: 18px;
+}
+
+.delete-btn[disabled] {
+    background: grey;
+    cursor: not-allowed;
+}
+
+.errorMsg {
+    color: red;
+    font-size: xx-large;
+}

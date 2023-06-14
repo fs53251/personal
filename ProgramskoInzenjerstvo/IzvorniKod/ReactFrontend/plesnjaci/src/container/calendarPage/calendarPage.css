@@ -1,0 +1,56 @@
+.calendarWrapper {
+    max-width: 70vw;
+    margin: 40px auto;
+    margin-left: 400px;
+}
+
+.eventContent{
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 7px;
+    white-space: normal;
+}
+
+.eventTitle{   
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.eventTime{
+    inline-size: 100%;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.calendarWrapper .fc .fc-button-primary {
+    background-color: purple;
+    border-color: purple;
+}
+
+.calendarWrapper .fc .fc-button-primary:hover {
+    background-color: rgb(255, 0, 255);
+    border-color: rgb(255, 0, 255);
+}
+
+.calendarWrapper .fc .fc-button-primary:disabled {
+    background-color: purple;
+    border-color: purple;
+}
+
+.legenda{
+    width: 20vw;
+    margin-left: 400px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.legenda-item{
+    border-radius: 10px;
+}
+
+.legenda-item-text{
+    padding: 5px;
+}

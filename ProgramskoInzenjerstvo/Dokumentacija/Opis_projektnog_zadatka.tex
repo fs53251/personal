@@ -1,0 +1,127 @@
+\chapter{Opis projektnog zadatka „PLESNJACI“ }
+\section{Uvod}
+		
+		Cilj ovog projektnog zadatka je razviti programsku podršku za izradu web aplikacije koja će olakšati pronalaženje i organizaciju plesnih tečajeva i plesnjaka. U nastavku se opisuju najopćenitije stranice web-aplikacije i njihove funkcionalnosti. 
+		
+\section{Opis funkcionalnosti web aplikacije}
+		 
+		      Gradimo jednostavnu CRUD aplikaciju, u nastavku navodimo njene osnovne cjeline i prikaz funkcionalnosti.
+		 
+	 	\subsection{"Početna stranica"}
+	
+			Prilikom pokretanja web-aplikacije prikazuje se „Početna stranica“. Ako korisnik nije       registriran na početnoj stranici se prikazuju profili klubova i tipovi plesa koje taj klub nudi. Također na stranici se nalazi karta s dostupnim plesnjacima i lokacijama klubova. Neregistriranom korisniku je omogućeno kreiranje računa (registracija) . 
+		
+
+			 
+			\subsubsection{Karta}
+				
+			Na karti se mogu filtrirati plesnjaci i klubovi. Plesnjaci se mogu filtrirati po tipu plesa, klubu koji ga organizira i tipovima plesa. Klubovi se mogu filtrirati po tipovima plesa za koje organiziraju tečajeve.
+			\bigskip
+			\bigskip
+			\bigskip
+			\bigskip
+			\bigskip
+			
+			
+				
+			\subsubsection{Registracija}
+				
+			Ako se korisnik odluči registrirati otvara se odgovarajući obrazac za registraciju koji od njega zahtijeva da upiše sljedeće informacije :
+				
+				\begin{packed_item}
+					\item Korisničko ime
+					\item Lozinka
+					\item Ime
+					\item Prezime
+					\item Spol
+					\item Datum rođenja
+					\item Broj mobitela
+					\item Email adresa
+					\item Opis plesnog iskustva i fotografija (opcionalno)
+				\end{packed_item}
+			\bigskip
+			
+	
+  	\subsection {"Stranica u kojoj je korisnik registriran"}
+  	Kad se korisnik registrirao on ima ulogu klijenta. Klijent može dodatno stvoriti klub. Ako klijent odluči stvoriti novi klub otvara se odgovarajući obrazac koji zahtijeva sljedeće informacije za taj klub :
+		
+		
+		\begin{packed_item}
+			\item Korisničko ime
+			\item Lozinka
+			\item Ime kluba
+			\item Adresa sjedišta
+			\item Datum rođenja
+			\item Telefon
+			\item Email adresa
+		\end{packed_item}
+	
+	Novo registrirani klubovi prvo moraju biti potvrđeni od strane administratora. Ako je korisnik uspio registrirati svoj klub on postaje vlasnikom kluba. Osim uloge klijenta i vlasnika kluba postoji i uloga administratora sustava.
+	
+	\bigskip
+	\bigskip
+	\bigskip
+	\bigskip
+	\bigskip
+	\bigskip
+	\bigskip
+	
+		
+		
+		
+		\subsubsection{Registrirani korisnik (klijent)}
+	
+			
+		Klijent može pregledati, mijenjati osobne podatke i izbrisati svoj korisnički račun. Također na karti mu je omogućeno prikazivanje tečajeva koji su slobodni za upis, a rezultate može filtrirati po željenom vremenu i tipu plesa. 
+		Odabirom tečaja, otvaraju se relevantne informacije poput vrste plesa, kalendar te ime, prezime i slika trenera. Kalendar ima zapisane termine tečaja i lokacije s dvoranom za svaki termin.
+		
+
+			
+			\subsubsection{Registrirani korisnik(vlasnik kluba)}
+			Vlasnik kluba je zadužen za organizaciju plesnjaka koji se mogu izvoditi i na lokacijama izvan prostorija kluba, a sadrže naziv, opis i sliku. Na plesnjaku se mogu plesati različiti tipovi plesa. Svaki klub ima svoju naslovnu stranicu (profil) i popis trenera.
+			Svaki trener ima podstranicu na kojima ima popis grupa koje trenira, a svi termini tečaja koje vodi su mu prikazani na kalendaru. Trener prilikom otvaranja tečaja za kojeg je zadužen uz opće informacije dobiva popis klijenata koji bi trebali biti nazočni.
+			Na profilu kluba su prikazane informacije o :
+			
+			
+			
+			\begin{packed_item}
+				\item imenu kluba
+				\item kontakt telefon
+				\item email adresa
+				\item kratki opis
+				\item poveznica na stranicu s grupama za upis
+				\item popis plesova koje njihovi treneri mogu voditi
+				\item prikaz lokacija na karti
+				\item popis dvorana po lokacijama
+			\end{packed_item}
+		
+		Vlasnik kluba na naslovnoj stranici kluba može objaviti upise za tečaj s krajnjim rokom prijave. Upisi u grupu mogu biti ograničavajući ovisno o dobi i spolu. Grupi je dodijeljen trener iz kluba, skup treninga kroz neko vrijeme, maksimalni broj sudionika te opis u kojem pišu dodatne informacije o težini treninga, posebnim uvjetima treniranja, pravila ponašanja i slično.
+		
+			\bigskip
+			\bigskip
+			\bigskip
+			\bigskip
+			\bigskip
+			
+			\subsubsection{Poveznica klijenta i klijenta kao vlasnika kluba}
+			
+		Bilo koji klijent može vlasniku kluba poslati prijavu da postane trener, a vlasnik kluba ga potom može  potvrditi. Prijava sadrži:
+		
+			\begin{packed_item}
+				\item motivacijsko pismo
+				\item potvrda da je klijent osposobljen držati tečaj plesa (pdf dokument)
+			\end{packed_item}
+		Klijent može pregledati aktivne prijave na tečaj od kluba i prijaviti se. Nakon isteka roka upisa, vlasnik kluba treba odabrati klijente koji se primaju u grupu. Vlasnik kluba može naknadno mijenjati popis klijenata, uređivati i brisati grupe.
+		
+			\bigskip
+			
+			\subsubsection{Administrator}
+			
+			Administrator može dodati, mijenjati i brisati plesove. Odobrava novo registrirane klubove kako bi postali valjani. Također može pregledati popis svih klijenata i klubova te uređivati korisničke račune.
+			Plesovi sadrže:
+			\begin{packed_item}
+				\item naziv
+				\item kratki opis
+				\item sliku
+				\item link na video primjer tog plesa
+			\end{packed_item}

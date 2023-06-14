@@ -1,0 +1,78 @@
+.multiselect-label {
+    font-size: 20px;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    margin-right: 10px;
+}
+
+.multiSelectWrapper {
+    width: 100%;
+}
+
+.multiselect-form {
+    width: 100%;
+    margin-top: 0px;
+}
+
+.multiselectContainer {
+    margin-top: 20px;
+}
+
+.multiselect-form .optionContainer {
+    border: 2px solid black;
+}
+
+.multiselect-form .optionContainer .highlight {
+    background: #fff;
+    color: black;
+}
+
+.multiselect-form .option:hover {
+    background: purple;
+    color: #fff;
+}
+
+.multiselect-form .searchBox {
+    height: 30px;
+}
+
+.multiselect-form .chip {
+    background: purple;
+    font-size: 16px;
+}
+
+#dances_input.searchBox{
+    color: white;
+}
+
+
+#dances_input.searchBox::-webkit-input-placeholder{
+    color: white;
+    font-size: 16px;
+}
+
+#dances_input.searchBox:-moz-placeholder{
+    color: white;
+    font-size: 16px;
+}
+
+.bigWrapper{
+    display: flex;
+}
+
+.margin-top{
+    margin-top: 20px;
+}
+
+.icon_cancel.icon_down_dir{
+    height: 100%;
+}
+
+.club-page .no-animation input ~ label{
+    top: -20px;
+    left: 0;
+    color: white;
+    font-size: 12px;
+}

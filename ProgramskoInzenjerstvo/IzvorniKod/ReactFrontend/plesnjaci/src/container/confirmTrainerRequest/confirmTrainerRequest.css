@@ -1,0 +1,114 @@
+
+.errorMsg{
+    color: red ;
+    font-size: larger;
+}
+  .trainer-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 700px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(purple, rgb(191, 64, 191));
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  .trainer-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .trainer-box .user-box {
+    position: relative;
+  }
+  
+  .trainer-box .user-box h1 {
+    width: 40%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    margin-left:150px;
+  }
+  .trainer-box .user-box textarea {
+    width: 60%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    margin-left:50px;
+  }
+
+  .trainer-box .user-box .link {
+    text-decoration: underline;
+  }
+
+  .trainer-box .user-box .link:hover{
+    cursor: pointer;
+    color:blue;
+  }
+  
+  .trainer-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  .trainer-buttons{
+    display:flex;
+    flex-direction: row;
+    margin-left: 10px;
+    justify-content: space-between;
+  }
+  
+  .trainer-button{
+    font-size: 14px;
+    border-radius: 20px;
+    border: 1px solid rgb(174, 4, 174);
+    background-color: rgb(42, 210, 45);
+    font-weight: bold;
+    padding: 12px 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: 0.5;
+  }
+  
+  .trainer-button:hover {
+    opacity:1.2;  
+  }
+
+  .trainer-button-decline{
+    font-size: 14px;
+    border-radius: 20px;
+    border: 1px solid rgb(174, 4, 174);
+    background-color: red;
+    font-weight: bold;
+    padding: 12px 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: 0.5;
+  }
+  
+  .trainer-button-decline:hover {
+    opacity:1.2;  
+  }
+
+
+  

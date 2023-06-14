@@ -1,0 +1,58 @@
+.frame{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 50px;
+   margin-left: 300px;
+   height: 100vh;
+   flex-direction: row;
+}
+.car{
+    margin:5px;
+}
+
+img{
+    height:500px;
+    width:350px;
+    border-radius: 10px;
+}
+.intro{
+    height:70px;
+    width:350px;
+    padding:6px;
+    box-sizing:border-box;
+    position:absolute;
+    background: rgb(27,27,27,.5);
+    color:white;
+    border-radius: 10px;
+    bottom:110px;
+}
+.car:hover{
+    cursor:pointer;
+}
+.pclass{
+    visibility: hidden;
+    opacity:0;
+    font-size: 20px;
+}
+.gumbic{
+    visibility: hidden;
+    opacity:0;
+}
+.car:hover .intro{
+    height:160px;
+    bottom:110px;
+    background: black;
+}
+h1{
+    font-size:25px;
+}
+.car:hover .pclass{
+    opacity:1;
+    visibility: visible;
+}
+
+.car:hover .gumbic{
+    opacity:1;
+    visibility: visible;
+}

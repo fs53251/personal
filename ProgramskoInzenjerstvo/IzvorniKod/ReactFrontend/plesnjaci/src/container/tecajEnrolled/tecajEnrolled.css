@@ -1,0 +1,36 @@
+.course-all-enrolled{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    margin-left: 30vh;
+}
+
+.isEnrolled, .enroll, .cancelEnroll{
+    background: none;
+    border-color: white;
+    font-size: 3em;
+    color: green;
+    display: flex;
+    cursor: pointer;
+}
+.enroll:hover, .cancelEnroll:hover{
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.enroll[disabled]:hover, .cancelEnroll[disabled]:hover{
+    cursor: not-allowed;
+    border: none;
+    color: grey;
+}
+
+.cancelEnroll{
+    color: red;
+}
+
+.redtext{
+    color: red;
+    font-size: xx-large;
+}

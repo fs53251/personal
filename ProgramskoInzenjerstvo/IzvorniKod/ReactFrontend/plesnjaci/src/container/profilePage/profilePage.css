@@ -1,0 +1,197 @@
+.profile-page-center * {
+  box-sizing: border-box;
+}
+
+.wrapper textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.profile-page-center {
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-left: 150px;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70vw;
+}
+
+
+.wrapper .edit {
+  width: 65%;
+  margin-bottom: 20px;
+}
+
+.wrapper .edit-save,
+.wrapper .deleteUserWrap {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.wrapper button,
+.wrapper i {
+  background: linear-gradient(to right, purple, rgb(221, 4, 221));
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.wrapper .edit .deleteUser {
+  background: red;
+}
+
+.wrapper .editbutton,
+.wrapper .deleteUser {
+  width: 150px;
+  height: 50px;
+}
+
+.wrapper .closeedit {
+  height: 50px;
+  width: 50px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper .edit .closeicon {
+  font-size: 50px;
+}
+
+
+.wrapper .left {
+  display: flex;
+}
+
+.wrapper .leftleft {
+  width: 200px;
+}
+
+.wrapper .left input,
+.wrapper .right input {
+  margin-bottom: 10px;
+  height: 40px;
+  width: 100%;
+  font-size: 24px;
+  border: 1px solid purple;
+}
+
+.wrapper input:read-only {
+  border: 1px solid white;
+}
+
+.wrapper .username {
+  border: none;
+}
+
+.wrapper .left img {
+  height: 200px;
+  width: 200px;
+  margin-right: 100px;
+}
+
+.wrapper .imagewrap {
+  position: relative;
+}
+
+.wrapper .file-upload input[type="file"] {
+  height: 30px;
+  width: 30px;
+  display: none;
+}
+
+.wrapper .editphoto,
+.wrapper .deletephoto {
+  position: absolute;
+  right: 100px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper .editphoto {
+  bottom: 6px;
+}
+
+.wrapper .deletephoto {
+  top: 0px;
+}
+
+.wrapper .editphoto .pencilicon,
+.wrapper .deletephoto .closeicon {
+  font-size: 30px;
+}
+
+
+.wrapper .right h3 {
+  border-bottom: 2px solid #e0e0e0;
+  color: #353c4e;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.wrapper h4 {
+  color: #353c4e;
+  margin-bottom: 5px;
+}
+
+.wrapper .profile-firstRow,
+.wrapper .profile-secondRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper .data {
+  width: 45%;
+}
+
+.wrapper .right input {
+  color: #666c72;
+  text-align: center;
+}
+
+.wrapper .right .radioInput {
+  height: initial;
+  width: initial;
+}
+
+.wrapper .radioHolderGender {
+  display: inline-block;
+  outline: 1px solid purple;
+  padding-right: 10px;
+  padding-top: 5px;
+  color: #666c72;
+}
+
+.wrapper .profile-experience {
+  resize: none;
+  text-align: center;
+  border: 1px solid purple;
+  max-width: 100%;
+  color: #666c72;
+  font-size: 18px;
+}
+
+.wrapper .profile-experience:read-only {
+  border: 1px solid white;
+}
+.changePassword{
+  width:250px;
+}
+
+.profile-page-center{
+  margin-top: 100px;
+}

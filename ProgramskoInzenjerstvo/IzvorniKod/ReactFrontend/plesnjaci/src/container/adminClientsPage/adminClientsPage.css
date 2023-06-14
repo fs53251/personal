@@ -1,0 +1,68 @@
+.unauthorized {
+    font-size: xx-large;
+    color: red;
+}
+
+.all-users-table {
+    display: flex;
+    justify-content: center;
+}
+
+.admin-clients-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.rdt_TableCol_Sortable{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+
+.all-users-search-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.all-users-searchBar {
+    display: flex;
+    font-size: x-large;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 600px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+.all-users-searchBar::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 1em;
+    width: 1em;
+    border-radius: 50em;
+    background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg) no-repeat 50% 50%;
+    background-size: contain;
+}
+
+.isAdmin, .removeAdminButton, .grantAdminButton {
+    background: none;
+    border-color: white;
+    font-size: 3em;
+    color: blue;
+    display: flex;
+}
+
+.removeAdminButton {
+    color: red;
+    cursor: pointer;
+}
+
+.grantAdminButton{
+    color: green;
+    cursor: pointer;
+}

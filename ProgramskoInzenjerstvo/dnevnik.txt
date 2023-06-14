@@ -1,0 +1,7 @@
+24.10.2022. - sastao se cijeli tim i podijelio poslove oko početne dokumentacije (opis, funkcionalni zahtjevi, dijagram obrazaca uporabi)
+27.10.2022. - došli na 2. labaratorijsku vježbu Marko Brlek, Josip Gegač i Filip Šiktar, prokomentirali smo početnu dokumentaciju
+31.10.2022. - sastali se Marko Brlek i Filip Šiktar, proučili poslove za sljedeći tjedan i podijelili ih ekipi (prepravak početne dokumentacije, razrada baze podataka)
+1.11.2022.  - sastao se tim i razradili smo erd model baze, podijeljeni su zadaci do sljedeće laboratorijske vježbe, dodane su izmjene nakon druge laboratorijske vježbe
+3.11.2022. - Karlo Žižić je došao na 3. labaratorijsku vježbu gdje je prokomentiran ERD model baze i Use Case dijagrami
+12.11.2022. - sastali se Marko Brlek i Andrej Cirkveni, teme su bile prezentiranje generične stranice, upute za rad u Reactu te su podijeljeni poslovi
+15.11.2022. - sastali se M. Brlek, M. Čukić, J. Gegač, F. Šiktar i K. Žižić, teme su bile prezentiranje generične stranice, komunikacija između frontenda i backenda te je definirano što se očekuje od generične funkcionalnosti

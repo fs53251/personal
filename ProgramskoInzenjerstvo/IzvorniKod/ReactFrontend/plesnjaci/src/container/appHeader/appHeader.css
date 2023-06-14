@@ -1,0 +1,126 @@
+.app-header {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.menubar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    width:60px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-sizing: initial;
+    text-align: left;
+    background:linear-gradient(to right,purple,rgb(174, 4, 174));
+    border-left:5px solid purple;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 10;
+}
+.menubar.active{
+    width:300px;
+}
+.menubar.noanimation{
+    transition: 0s;
+}
+.header-content{
+    position:absolute;
+    padding-top: 50px;
+    width:100%;
+}
+.nth-item .toggle{
+    position:relative;
+    list-style: none;
+    width:100%;
+}
+.nth-item b:nth-child(1){
+    position: absolute;
+    top: -15px;
+    height:15px;
+    width:100%;
+    background:white;
+    display:none;
+}
+.nth-item b:nth-child(1)::before{
+    content:'';
+    position: absolute;
+    top: 0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    border-bottom-right-radius: 20px;
+    background:linear-gradient(to right,purple,rgb(174, 4, 174));
+}
+.nth-item b:nth-child(2){
+    position: absolute;
+    bottom: -15px;
+    height:15px;
+    width:100%;
+    background:white;
+    display: none;
+}
+.nth-item b:nth-child(2)::before{
+    content:'';
+    position: absolute;
+    top: 0px;
+    left:0px;
+    height:15px;
+    width:100%;
+    border-top-right-radius: 20px;
+    background:linear-gradient(to right,purple,rgb(174, 4, 174));
+}
+.nth-item .active b:nth-child(1),
+.nth-item .active b:nth-child(2){
+    display: flex;
+}
+.toggle-icon{
+    margin-top: 20px;
+    padding: 0px;
+    position: relative;
+    width:100%;
+    display:flex;
+    color: white;
+    text-decoration: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.menu-item{
+    margin-top: 20px;
+    padding: 0px;
+    position: relative;
+    width:100%;
+    display:flex;
+    color: white;
+    text-decoration: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.menu-item.active{
+    color:purple;
+    background-color: white;
+}
+.icon{
+    position:relative;
+    display:flex;
+    align-items: center;
+    padding-left: 10px;
+    min-width:50px;
+    height:50px;
+    text-align: center;
+    font-size: 2em;
+}
+.title{
+    position:relative;
+    display:flex;
+    align-items: center;
+    height:50px;
+    line-height: 35px;
+    white-space: nowrap;
+}
+
+.header-icon {
+    font-size: 2rem;
+    color: white;
+}

@@ -1,0 +1,67 @@
+.club-box .Dropdown-control{
+    margin-bottom: 20px;
+    border: 2px solid white;
+    background-color: purple;
+    color: white;
+}
+
+.club-box .Dropdown-option.is-selected{
+    background-color: purple;
+    color: white;
+}
+
+
+.club-box .redak{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.club-page .club-box .deleteTerminBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-left: 10px;
+    text-align: center;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.club-page .club-box .termin {
+    width: 80%;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.club-page .club-box .left-aligned{
+    text-align: left;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 100;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.club-page .club-box .addAppointment{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.club-page .club-box .addTerminBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-left: 10px;
+    text-align: center;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.club-page .buttonR {
+    margin-top: 20px;
+}

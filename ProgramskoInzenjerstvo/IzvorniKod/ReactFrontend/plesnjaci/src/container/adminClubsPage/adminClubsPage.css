@@ -1,0 +1,50 @@
+.unauthorized {
+    font-size: xx-large;
+    color: red;
+}
+
+.all-clubs-table {
+    display: flex;
+    justify-content: center;
+}
+
+.admin-clubs-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.rdt_TableCol_Sortable {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+
+.all-clubs-search-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.all-clubs-searchBar {
+    display: flex;
+    font-size: x-large;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 600px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+.all-clubs-searchBar::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 1em;
+    width: 1em;
+    border-radius: 50em;
+    background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg) no-repeat 50% 50%;
+    background-size: contain;
+}

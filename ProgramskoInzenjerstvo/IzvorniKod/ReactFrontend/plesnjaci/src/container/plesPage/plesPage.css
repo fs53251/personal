@@ -1,0 +1,283 @@
+.ples-okvir {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-left: 330px;
+    width: 1100px;
+    height: 800px;
+}
+
+.error-naslov {
+    height: 40px;
+}
+
+.ples-kartica {
+    height: 750px;
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow:
+        inset 20px 0 80px #f0f,
+        inset -20px 0 80px #0ff,
+        inset 20px 0 300px #f0f,
+        inset -20px 0 300px #0ff;
+}
+
+.ples-video-wrapper {
+    margin-top: 50px;
+    height: 500px;
+    width: 550px;
+}
+
+.ples-glavni {
+    height: 760px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.ples-kartica {
+    position: relative;
+    height: 750px;
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow:
+        inset 20px 0 80px #f0f,
+        inset -20px 0 80px #0ff,
+        inset 20px 0 300px #f0f,
+        inset -20px 0 300px #0ff;
+}
+
+.ples-karta {
+    height: 500px;
+    width: 550px;
+    margin-top: 150px;
+    display: flex;
+
+}
+
+.ples-video {
+    margin-top: 50px;
+    margin-left: 50px;
+    height: 410px;
+}
+
+/* ples-card */
+.ples-card {
+    margin-top: 120px;
+    margin-left: 5px;
+    height: 550px;
+    width: 450px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+}
+
+.ples-img {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    transform: translateX(-50%);
+    top: 50px;
+    left: 275px;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.ples-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ples-content {
+    margin-top: 100px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    justify-content: center;
+}
+
+.organizator {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.ples-ime {
+    margin-bottom: 10px;
+    font-size: 1.25em;
+    font-weight: 600;
+    color: black;
+}
+
+.ples-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 20px;
+    align-content: center;
+}
+
+.ples-info label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.15em;
+    font-weight: 500;
+    color: black;
+    margin-right: 5px;
+}
+
+.ples-info a {
+    text-decoration: none;
+    margin-top: 2px;
+    font-size: 1em;
+    margin-left: 50px;
+    color: purple;
+    padding: 5px;
+    border: 1px dashed purple;
+}
+
+.ples-info input:disabled {
+    font-size: 1em;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: purple;
+}
+
+.ples-info input {
+    font-size: 1em;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid purple;
+    outline: none;
+    padding: 10px;
+    color: purple;
+}
+
+.ples-info textarea {
+    font-size: 1em;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid purple;
+    outline: none;
+    padding: 10px;
+    color: purple;
+}
+
+.ples-info textarea:disabled {
+    border: none;
+    resize: none;
+}
+
+.ples-buttons {
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 80px;
+    margin-left: 70px;
+}
+
+.ples-button {
+    cursor: pointer;
+    color: #fff;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 15px;
+    border: 1px solid white;
+    background-color: rgb(174, 4, 174);
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 0.6;
+    width: 100px;
+    margin-left: 70px;
+}
+
+.ples-button.closeedit {
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 36px;
+}
+
+.ples-button .closeicon {
+    font-size: 30px;
+}
+
+.ples-button:hover {
+    opacity: 1;
+}
+
+.editAndClose {
+    display: flex;
+}
+
+.ples-button:hover {
+    opacity: 1;
+}
+
+.editAndClose button {
+    margin-left: 15px;
+}
+
+.ples-button.button-trainer {
+    position: absolute;
+    top: 25px;
+    right: 50px;
+}
+
+.side-buttons .ples-button {
+    margin-left: 20px;
+    height: 50px;
+}
+
+.editphoto {
+    bottom: 0px;
+    right: 0px;
+}
+
+.editphoto,
+.deletephoto {
+    position: absolute;
+    right: 0px;
+    height: 30px;
+    width: 30px;
+    background: linear-gradient(to right, purple, rgb(221, 4, 221));
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.editphoto .icon {
+    height: 30px;
+    width: 10%;
+    right: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+.deletephoto .icon {
+    height: 25px;
+    width: 25px;
+    right: 16px;
+    font-size: 30px;
+    color: #fff;
+}
