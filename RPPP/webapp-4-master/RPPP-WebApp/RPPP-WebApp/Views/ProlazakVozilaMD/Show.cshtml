@@ -1,0 +1,98 @@
+@model RPPP_WebApp.ViewModels.NaplatneKuciceMDViewModel
+
+@{
+    ViewBag.Title = "Naplatna kucica: " + @Model.NaplatnaKucicaId;
+}
+
+<div class="col-sm-1 text-left">
+    <p>
+        Povratak
+        <a class="btn btn-sm btn-primary cancel"
+           asp-action="Index"
+           asp-route-page="@ViewBag.Page"
+           asp-route-sort="@ViewBag.Sort"
+           asp-route-ascending="@ViewBag.Ascending"
+           title="Povratak na popis naplatnih kucica">
+            <i class="fas fa-undo-alt"></i>
+        </a>
+    </p>
+</div>
+<h2>@Model.NaplatnaKucicaId</h2>
+<hr />
+<div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                @{
+                    string[] naziviMaster = { "Id","Naplatna postaja", "Vrsta naplate",
+                                              "Otvorena"};
+                    for (int i = 0; i < naziviMaster.Length; i++)
+                    {
+                    <th class="table-column-font-size text-left">
+                        @naziviMaster[i]
+                    </th>
+                    }
+                }
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="text-left">
+                    @Model.NaplatnaKucicaId
+                </td>
+                <td class="text-left">
+                    @Model.NaplatnaKucica.NaplatnaPostaja.Naziv
+                </td>
+                <td class="text-left">
+                    @Model.NaplatnaKucica.VrstaNaplate.Naziv
+                </td>
+                <td class="text-left">
+                    @Model.NaplatnaKucica.Otvorena;
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <hr />
+    <div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    @{
+                        string[] nazivi = { "Id", "Registracijska oznaka", "Kategorija vozila", "Vrijeme prolaska", "Naplatna kucica"};
+                        for (int i = 0; i < nazivi.Length; i++)
+                        {
+                        <th class="table-column-font-size text-left">
+                            @nazivi[i]
+                        </th>
+                        }
+                    }
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var prolazakVozila in Model.prolasciVozila)
+                {
+                <tr>
+                    <td class="text-left">
+                        @prolazakVozila.Id
+                    </td>
+                    <td class="text-left">
+                        @prolazakVozila.RegistracijskaOznaka
+                    </td>
+                    <td class="text-left">
+                        @prolazakVozila.KategorijaVozila.Naziv
+                    </td>
+                    <td class="text-left">
+                        @prolazakVozila.VrijemeProlaska
+                    </td>
+                    <td class="text-left">
+                        @prolazakVozila.NaplatnaKucicaId
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

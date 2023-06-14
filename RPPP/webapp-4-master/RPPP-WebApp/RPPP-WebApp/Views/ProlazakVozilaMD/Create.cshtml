@@ -1,0 +1,51 @@
+@model RPPP_WebApp.ViewModels.NaplatneKuciceMDViewModel
+
+@{
+    ViewBag.Title = "Nova master detail forma (naplatna kucica-prolazak vozila)";
+}
+<div>
+    <form asp-action="Create" method="post">
+        <div class="mb-3">
+            <label class="form-label">Otvorena</label>
+            <select asp-for="Otvorena" class="dropdown">
+                <option value="true">Da</option>
+                <option value="false">Ne</option>
+            </select>
+            <div class="form-text"><span asp-validation-for="Otvorena" class="text-danger"></span></div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Naplatna postaja</label>
+            <input class="form-control" data-autocomplete="naplatnapostaja" asp-for="@Model.NaplatnaKucica.NaplatnaPostaja.Naziv" />
+            <input type="hidden" asp-for="NaplatnaPostajaId" readonly="readonly" class="form-control" data-autocomplete-placeholder="naplatnapostaja" />
+            <div class="form-text"><span asp-validation-for="NaplatnaPostajaId" class="text-danger"></span></div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Vrsta naplate</label>
+            <input class="form-control" data-autocomplete="vrstanaplate" asp-for="@Model.NaplatnaKucica.VrstaNaplate.Naziv" id="naplataAC" />
+            <input type="hidden" asp-for="VrstaNaplateId" readonly="readonly" class="form-control" data-autocomplete-placeholder="vrstanaplate" />
+            <div class="form-text"><span asp-validation-for="VrstaNaplateId" class="text-danger"></span></div>
+        </div>
+        <div>
+            <partial name="ProlasciVozila" model="Model.prolasciVozila" />
+        </div>
+        <div class="text-center">
+            <button class="btn btn-primary" type="submit">Dodaj</button>
+            <a asp-action="Index" class="btn btn-secondary">Odustani</a>
+        </div>
+    </form>
+</div>
+
+<partial name="ProlazakVozilaTemplate" />
+
+@section styles{
+    <link rel="stylesheet" href="~/lib/jqueryui/themes/base/jquery-ui.css" />
+}
+
+@section scripts{
+    <partial name="IncludeValidation" />
+    <script src="~/lib/jqueryui/jquery-ui.js"></script>
+    <script src="~/js/autocomplete.js" asp-append-version="true"></script>
+    <script src="~/js/josipMD.js" asp-append-version="true"></script>
+}

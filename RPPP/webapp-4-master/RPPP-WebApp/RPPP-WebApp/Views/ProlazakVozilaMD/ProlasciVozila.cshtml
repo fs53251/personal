@@ -1,0 +1,65 @@
+@model IEnumerable<ProlazakVozila>
+
+                      <table class="table table-striped" id="table-prolasci">
+                          <thead>
+                              <tr>
+                                  @{
+                string[] nazivi = { "Kategorija vozila", "Kategorija vozila Id", "Vrijeme prolaska", "Registracijska oznaka"};
+                for (int i = 1; i <= nazivi.Length; i++)
+                {
+                                      <th class="text-left">
+                                          @nazivi[i - 1]
+                                      </th>
+                }
+                                      <th></th>
+                                  }
+                              </tr>
+                          </thead>
+                          <tbody>
+                              @{
+                              int j = 0;
+                              foreach (var prolazakVozila in Model)
+                                 {
+                              <tr>
+                                  <td class="text-left col-sm-1">
+                                      <input name="prolasciVozilaTS[@j].KategorijaVozila.Naziv" value="@prolazakVozila.KategorijaVozila.Naziv" />
+                                  </td>
+                                  <td class="text-left col-sm-1">
+                                      <input name="prolasciVozilaTS[@j].KategorijaVozilaId" value="@prolazakVozila.KategorijaVozilaId" />
+                                  </td>
+
+                                  <td class="text-left col-sm-1">
+                                      <input name="prolasciVozilaTS[@j].VrijemeProlaska" value="@prolazakVozila.RegistracijskaOznaka" type="datetime-local" />
+                                  </td>
+                                  <td class="text-left col-sm-1">
+                                      <input name="prolasciVozilaTS[@j].RegistracijskaOznaka" value="@prolazakVozila.RegistracijskaOznaka" />
+                                  </td>
+                                  <td>
+                                      <button class="btn btn-sm btn-danger deleterow" title="Izbaci"><i class="fa fa-minus"></i></button>
+                                  </td>
+
+                              </tr>
+                              ++j;
+                                }
+                              }
+
+                          <tr>
+                              <td class="text-left col-sm-1">
+                                  <input id="prolazak-kategorijaVozila" type="text" data-autocomplete="kategorijavozila" />
+                                  <input id="prolazak-sifra" value="0" hidden="hidden" />
+                              </td>
+                              <td class="text-left col-sm-1">
+                                  <input id="prolazak-kategorijaId" type="text" data-autocomplete-placeholder="kategorijavozila" readonly="readonly" />
+                              </td>
+                              <td class="text-left col-sm-1">
+                                  <input id="prolazak-vrijemeProlaska" type="datetime-local" />
+                              </td>
+                              <td class="text-left col-sm-1">
+                                  <input id="prolazak-RegistracijskaOznaka" type="text" />
+                              </td>
+                              <td>
+                                  <button id="prolazak" type="button" class="btn btn-sm btn-secondary" title="Novi"><i class="fas fa-plus"></i></button>
+                              </td>
+                          </tr>
+                              </tbody>
+                          </table>

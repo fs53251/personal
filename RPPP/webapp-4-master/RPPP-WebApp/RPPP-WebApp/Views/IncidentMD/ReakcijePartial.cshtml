@@ -1,0 +1,72 @@
+﻿@model IEnumerable<ReakcijaViewModel>
+<table class="table table-striped" id="table-reakcije">
+    <thead>
+        <tr>
+            @{
+                string[] nazivi = { "Naziv","Datum", "Incident", "Vrsta Reakcije"};
+                for (int i = 0; i < nazivi.Length; i++) {
+                    <th class="text-center">
+                        @nazivi[i]
+                    </th>
+                }
+            }
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var reakcija in Model) {
+            <tr>
+                <td class="text-left col-sm-4">
+                    <input type="hidden" name="Reakcije.Index" value="@reakcija.Id" />
+                    <input type="hidden" name="PopratniSadrzaji[@reakcija.Id].Id" value="@reakcija.Id" />
+                    <input type="hidden" name="PopratniSadrzaji[@reakcija.Id].Datum" value="@reakcija.Datum" />
+                    <input type="hidden" name="PopratniSadrzaji[@reakcija.Id].Incident" value="@reakcija.Incident" />
+                    <input type="hidden" name="PopratniSadrzaji[@reakcija.Id].VrstaReakcije" value="@reakcija.VrstaReakcije" />
+                </td>
+                @*
+            <td class="text-center col-sm-1">
+            <input name="Dionice[@dionica.Id].Naziv" class="form-control" value="@dionica.Naziv" />
+            </td>
+            *@
+                <td class="text-center col-sm-1">
+                    <input name="Reakcije[@reakcija.Id].Datum" class="form-control" value="@reakcija.Datum" />
+                </td>
+                <td class="text-center col-sm-1">
+                    <input name="Reakcije[@reakcija.Id].Incident" class="form-control" value="@reakcija.Incident" />
+                </td>
+                <td class="text-center col-sm-1">
+                    <input name="Reakcije[@reakcija.Id].VrstaReakcije" class="form-control" value="@reakcija.VrstaReakcije" />
+                </td>
+                <td>
+                    <button class="btn btn-sm btn-danger deleterow" title="Izbaci"><i class="fa fa-minus"></i></button>
+                </td>
+
+            </tr>
+        }
+
+
+        <tr>
+            <td class="text-left col-sm-1">
+                <input id="reakcija-naziv" type="text" data-autocomplete="incidentReakcije" />
+                <input id="reakcija-id" type="hidden" data-autocomplete-placeholder="incidentReakcije" readonly="readonly" />
+            </td>
+
+            <td class="text-center col-sm-1">
+                <input id="reakcija-datum" data-autocomplete-placeholder-datum="autocestaDionice" />
+            </td>
+            <td class="text-center col-sm-1">
+                <input id="reakcija-incident" data-autocomplete-placeholder-incident="autocestaDionice" />
+            </td>
+             <td class="text-center col-sm-1">
+                <input id="reakcija-vrstaReakcije" data-autocomplete-placeholder-vrstaReakcije="autocestaDionice" />
+            </td>
+         
+            <td class="text-left" colspan="3">
+                <button id="reakcija-dodaj" class="btn btn-sm btn-secondary" title="Dodaj"><i class="fas fa-plus"></i></button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+

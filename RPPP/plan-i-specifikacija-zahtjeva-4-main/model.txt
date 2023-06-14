@@ -1,0 +1,8 @@
+Karlo Žižić-Spavaća soba, Benzinska postja, Električna punionica
+Josip Kovač- 
+entiteti: NaplatnaPostaja, NaplatnaKucica, KategorijaVozila, VrstaNaplate, ProlazVozila
+NaplatnaPostaja (master) -> NaplatnaKucica (detail) Autocesta(sif. master), VrstaNaplate(sif. detail)
+NaplatnaKucica (master) -> ProlazVozila (detail)  VrstaNaplate(sif. master), KategorijaVozila(sif. detail)
+Ivan Žgela- Cestovni objekti, Čvorište, Tunel, Most i Vijadukt
+Filip Siki- Obavijesti, Vremenski uvjeti, Radovi na cesti, Prometna nesreća
+Luka Slugečić-Kamere, Nadzor brzine, Nadzor prometa
