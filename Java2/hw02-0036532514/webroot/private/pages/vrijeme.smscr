@@ -1,0 +1,21 @@
+{$= "text/html" @setMimeType $}
+<html>
+	<head>
+		<title>Vrijeme</title>
+		
+		<style>
+			body{ background-image: url('{$= "slika" "1" @pparamGet $}');}
+			div {
+				background-color: white;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div>
+			<h1>Trenutno vrijeme</h1>
+			<p> {$= "vrijeme" "1" @tparamGet $}</p>
+			<a href="choose">Odaberi pozadinu</a>
+		<div>
+	</body>
+</html>
