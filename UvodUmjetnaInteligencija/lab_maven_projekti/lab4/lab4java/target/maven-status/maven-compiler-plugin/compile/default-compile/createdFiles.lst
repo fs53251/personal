@@ -1,0 +1,10 @@
+ui/Zapis.class
+ui/NeuralNetwork.class
+ui/Solution.class
+ui/W.class
+ui/Layer.class
+ui/Pair.class
+ui/OutputNeuron.class
+ui/Neuron.class
+ui/InputNeuron.class
+ui/InsideNeuron.class
