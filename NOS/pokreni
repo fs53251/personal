@@ -1,0 +1,4 @@
+sudo ./load_shofer
+echo -n "12345467890abcdefghijklmnoprstuvzyw" > /dev/shofer_in
+
+tail -f /var/log/kern.log 
